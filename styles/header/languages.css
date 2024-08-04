@@ -1,0 +1,35 @@
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-item {
+  display: flex;
+  gap: 17px;
+}
+
+.language-title {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10px;
+  width: 41px;
+}
+
+.language-level {
+  background-color: var(--bg-green);
+  border-radius: 3px;
+  height: 11px;
+}
+
+.language-level-6 {
+  width: 123px;
+}
+
+.language-level-7 {
+  width: 144px;
+}
+
+.language-level-10 {
+  width: 184px;
+}

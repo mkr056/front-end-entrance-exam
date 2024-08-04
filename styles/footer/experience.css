@@ -1,0 +1,95 @@
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-item {
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.experience-item.recent {
+  background-color: var(--bg-green);
+}
+
+.recent-headline {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.experience-period,
+.recent-label {
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.experience-period.recent {
+  color: white;
+  flex: 1;
+}
+
+.recent-label {
+  box-sizing: content-box;
+  padding: 2px 6px;
+  background-color: rgba(126, 115, 18, 0.4);
+  color: #ddf163;
+  border-radius: 59px;
+  align-self: start;
+}
+
+.experience-info {
+  display: flex;
+  gap: 19px;
+}
+
+.experience-overview {
+  width: 124px;
+  flex-shrink: 0;
+}
+
+.experience-title {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.experience-title.recent {
+  color: white;
+}
+
+.experience-subtitle {
+  font-size: 8px;
+  line-height: 12px;
+  color: #3f3d3d;
+}
+
+.experience-subtitle.recent {
+  color: #ebf9f2;
+}
+
+.experience-details {
+  padding: 0;
+  margin: 0;
+}
+
+.experience-details > li {
+  list-style-type: none;
+  position: relative;
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.experience-details.recent > li {
+  color: white;
+}
+
+.experience-details > li::before {
+  content: '•';
+  position: absolute;
+  left: -8px;
+}

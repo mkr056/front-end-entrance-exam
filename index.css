@@ -1,3 +1,126 @@
-div {
-  color: red;
+@import url('./styles/header/header.css');
+@import url('./styles/main/main.css');
+@import url('./styles/footer/footer.css');
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src:
+    url('./public/fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('./public/fonts/Poppins/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src:
+    url('./public/fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+    url('./public/fonts/Poppins/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src:
+    url('./public/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+    url('./public/fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+}
+
+@keyframes change-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* colors */
+:root {
+  --bg-grey: #f0f0f0;
+  --bg-green: #28d979;
+}
+
+/* offsets */
+:root {
+  --gap: 20px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: grey;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+[contenteditable='true'] {
+  outline: none;
+}
+
+.animate[contenteditable='true'] {
+  animation: change-animation 1s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 20px;
+  gap: var(--gap);
+  width: 595px;
+}
+
+.section-row {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.section-row > *:not(:nth-last-child(1)) {
+  flex-shrink: 0;
+}
+
+.section-row > :nth-last-child(1) {
+  flex-grow: 1;
+}
+
+.card {
+  background-color: var(--bg-grey);
+  padding: 12px;
+  border-radius: 12px;
+  /*
+    если мы не хотим чтобы карточки в ряду были одной высоты
+    align-items: start;
+  */
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 0 16px;
 }

@@ -1,0 +1,18 @@
+.interests {
+  margin-bottom: calc(var(--gap) + 4px);
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interests-item {
+  font-size: 10px;
+  line-height: 15px;
+  background-color: white;
+  border-radius: 40px;
+  padding: 4px 10px;
+  box-sizing: content-box;
+}

@@ -1,0 +1,67 @@
+.card.education {
+  width: 268px;
+  padding-right: 8px;
+}
+
+.education-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 116px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+  align-self: start;
+}
+
+.education-item.favourite {
+  background-color: var(--bg-green);
+}
+
+.favourite-headline {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.favourite-headline > img {
+  align-self: start;
+  flex-shrink: 0;
+}
+
+.education-period,
+.education-title {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.education-period.favourite,
+.education-title.favourite {
+  color: white;
+}
+
+.education-period.favourite {
+  flex-grow: 1;
+}
+
+.education-hashtags,
+.education-location {
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.education-hashtags {
+  color: #149063;
+}
+
+.education-hashtags.favourite,
+.education-location.favourite {
+  color: white;
+}

@@ -5,11 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Front End Entrance Exam</title>
-    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <div>111</div>
+    <div class="container">
+      <div class="content" id="content">
+        <div class="section-row">
+          <img class="card picture" src="public/picture/picture.jpg" alt="Profile Picture" />
+          <div class="card intro">
+            <p class="greeting-text">Hello 👋🏻 I’m</p>
+            <p class="name-text">Graham Hunt</p>
+            <p class="occupation-text">Brand/Logo Designer</p>
+          </div>
+
+          <div class="card">
+            <h6 class="card-title">Languages</h6>
+            <div class="languages-list">
+              <div class="language-item">
+                <p class="language-title">English</p>
+                <div class="language-level language-level-10"></div>
+              </div>
+
+              <div class="language-item">
+                <p class="language-title">Spanish</p>
+                <div class="language-level language-level-7"></div>
+              </div>
+
+              <div class="language-item">
+                <p class="language-title">French</p>
+                <div class="language-level language-level-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-row">
+          <div class="card education">
+            <h6 class="card-title">Education</h6>
+            <div class="education-list">
+              <div class="education-item favourite">
+                <div class="favourite-headline">
+                  <p class="education-period favourite">2024</p>
+                  <img src="public/education/heart.svg" alt="Heart Icon" />
+                </div>
+                <div>
+                  <p class="education-title favourite">UX/UI</p>
+                  <p class="education-hashtags favourite">
+                    #UX #UI #research #DesignSystem #Agile #wireframing #figma #IA
+                  </p>
+                </div>
+
+                <p class="education-location favourite">Neoland</p>
+              </div>
+
+              <div class="education-item">
+                <p class="education-period">2022</p>
+                <div>
+                  <p class="education-title">Product designer</p>
+                  <p class="education-hashtags">#analytics #research #prototype #wireframes</p>
+                </div>
+
+                <p class="education-location">Coursera</p>
+              </div>
+
+              <div class="education-item">
+                <p class="education-period">2017-2021</p>
+                <div>
+                  <p class="education-title">Graphic design</p>
+                  <p class="education-hashtags">#branding #web #illustration #adobe</p>
+                </div>
+
+                <p class="education-location">Cali Institute of the Arts</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card interests">
+              <h6 class="card-title">Interests</h6>
+              <div class="interests-list">
+                <p class="interests-item">branding</p>
+                <p class="interests-item">brand identity</p>
+                <p class="interests-item">logo</p>
+                <p class="interests-item">typography</p>
+                <p class="interests-item">photography</p>
+                <p class="interests-item">designing</p>
+                <p class="interests-item">poster design</p>
+                <p class="interests-item">research</p>
+                <p class="interests-item">social networks</p>
+                <p class="interests-item">illustration</p>
+              </div>
+            </div>
+
+            <div class="card contacts">
+              <h6 class="card-title contacts-prompt">Let´s chat! I´m ready to work on exciting projects</h6>
+              <p class="contacts-info">ivann19bj@gmail.com&emsp;|&emsp;+34 666 666 666</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-row">
+          <div class="card tools">
+            <h6 class="card-title">Tools</h6>
+            <div class="tools-list">
+              <div class="tools-item">
+                <p class="tools-item-title">design</p>
+                <img src="public/tools/figma.svg" alt="Figma Logo" />
+                <img src="public/tools/creative-cloud.svg" alt="Creative Cloud Logo" />
+                <img src="public/tools/miro.svg" alt="Miro Logo" />
+                <img src="public/tools/notion.svg" alt="Notion Logo" />
+                <img src="public/tools/meet.svg" alt="Meet Logo" />
+                <img src="public/tools/analytics.svg" alt="Analytics Logo" />
+              </div>
+
+              <div class="tools-item">
+                <p class="tools-item-title">no-code</p>
+                <img src="public/tools/zapier.svg" alt="Zapier Logo" />
+                <img src="public/tools/webflow.svg" alt="Webflow Logo" />
+                <img src="public/tools/framer.svg" alt="Framer Logo" />
+                <img src="public/tools/wordpress.svg" alt="Wordpress Logo" />
+              </div>
+
+              <div class="tools-item">
+                <p class="tools-item-title">artificial intelligence</p>
+                <img src="public/tools/chat-gpt.svg" alt="ChatGPT Logo" />
+                <img src="public/tools/copilot.svg" alt="Copilot Logo" />
+                <img src="public/tools/midjourney.svg" alt="Midjourney Logo" />
+              </div>
+            </div>
+          </div>
+          <div class="card experience">
+            <h6 class="card-title">Experience</h6>
+            <div class="experience-list">
+              <div class="experience-item recent">
+                <div class="recent-headline">
+                  <p class="experience-period recent">Jul. 2023 - Ago. 2023</p>
+                  <p class="recent-label">most recent</p>
+                </div>
+
+                <div class="experience-info">
+                  <div class="experience-overview">
+                    <p class="experience-title recent">Senior Graphic Designer</p>
+                    <p class="experience-subtitle recent">Pinnacle&emsp;|&emsp;Full-time</p>
+                  </div>
+
+                  <ul class="experience-details recent">
+                    <li>Research and brainstorm various design ideas for content and marketing.</li>
+                    <li>Review the work submitted by Junior Designers and sharing feedback.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="recent-headline">
+                  <p class="experience-period">Ene. 2021 - Jul. 2023</p>
+                </div>
+
+                <div class="experience-info">
+                  <div class="experience-overview">
+                    <p class="experience-title">Graphic / Web designer</p>
+                    <p class="experience-subtitle">Double Square&emsp;|&emsp;Full-time</p>
+                  </div>
+
+                  <ul class="experience-details">
+                    <li>Development of internal projects from scratch, product design of brands.</li>
+                    <li>Landing page, webapps and hybrid apps</li>
+                    <li>Taking decisions with stakeholders for the future of products such as Beagle labs, myur...</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="recent-headline">
+                  <p class="experience-period">Feb. 2021 - Jul. 2023</p>
+                </div>
+
+                <div class="experience-info">
+                  <div class="experience-overview">
+                    <p class="experience-title">Graphic Designer</p>
+                    <p class="experience-subtitle">Freelance</p>
+                  </div>
+
+                  <ul class="experience-details">
+                    <li>Visual design for Events, Brands and Products.</li>
+                    <li>Product design, Packaging Design</li>
+                    <li>Logo Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="download-button">Download as PDF</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,14 @@
+.card.contacts {
+  background-color: black;
+}
+
+.card-title.contacts-prompt {
+  color: white;
+  margin-bottom: 11px;
+}
+
+.contacts-info {
+  font-size: 10px;
+  line-height: 15px;
+  color: #dddddd;
+}

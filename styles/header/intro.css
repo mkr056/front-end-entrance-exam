@@ -1,0 +1,24 @@
+.intro {
+  width: 124px;
+}
+
+.greeting-text {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom: 28px;
+}
+
+.name-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+  margin-bottom: 6px;
+}
+
+.occupation-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #5c5c5c;
+}
